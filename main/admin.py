@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Content
+from .models import Main
 
-admin.site.register(Content)
+admin.site.register(Main)

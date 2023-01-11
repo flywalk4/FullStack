@@ -1,9 +1,20 @@
+
+
 {% extends 'main/layout.html' %}
 
 {% block title %}
-{{title}}
+    {{title}}
 {% endblock %}
 
 {% block content %}
-Главная
+
+    {% for p in content%}
+        <article class="main">
+
+            <h3>{{p.title}}</h3>
+            <img style="display: block; margin: 0 auto;" width="800px" src="{{p.photo}}">
+            <p>{{p.full_text|safe}}</p>
+        </article>
+    {% endfor %}
+
 {% endblock %}

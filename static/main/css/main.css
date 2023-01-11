@@ -4,7 +4,7 @@ body{
 
 aside{
     float: left;
-    background: #181818;
+    background: #252627;
     width: 20%;
     padding: 3%;
     color: white;
@@ -44,16 +44,20 @@ aside ul li:hover, aside ul li:hover{
 }
 
 header{
-    background-color: #181818;
+    background-color: #252627;
+    float: right;
+    width: 80%;
 }
 
 header div{
+
     display: flex;
     flex-direction: row;
     justify-content:center;
     width: 50%;
     margin: 0 auto;
     gap: 30px;
+
 }
 
 header div img{
@@ -64,4 +68,68 @@ header div h1{
     width: auto;
     align-self: center;
     color: white;
+}
+
+.vacancy{
+    width: 85%;
+    margin: 0 auto;
+    padding: 2.5%;
+    margin-bottom: 50px;
+}
+
+.vacancy h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    padding: 0;
+}
+
+.skills li{
+    background-color: #F2BB05;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.date{
+    padding: 20px;
+    text-align: center;
+}
+
+.vacancy .description{
+    background-color: #ebebeb;
+    padding: 2.5%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.vacancy .more{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.more p{
+    background-color: #EFF9F0;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.more p span{
+    font-size: 15px;
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main h3{
+    margin-top: 50px;
+    text-align: center;
 }
