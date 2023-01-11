@@ -1,0 +1,67 @@
+body{
+    background-color: white;
+}
+
+aside{
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 3%;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+main{
+    width: 80%;
+    float: right;
+}
+
+aside h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    color: white;
+    display: block;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+aside ul a{
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul li:hover{
+    color:antiquewhite;
+}
+
+header{
+    background-color: #181818;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 50%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+header div img{
+    width: 100px;
+}
+
+header div h1{
+    width: auto;
+    align-self: center;
+    color: white;
+}
