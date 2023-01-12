@@ -1,5 +1,7 @@
 {% extends 'main/layout.html' %}
 
+{% load static %}
+
 {% block title %}
 {{title}}
 {% endblock %}
@@ -34,4 +36,9 @@
             </div>
         </article>
     {% endfor %}
+    <button class="up-button" type="button">
+    ↑
+    <span class="visually-hidden">Наверх</span>
+    </button>
+    <script src="{% static 'main/js/scroll.js' %}"></script>
 {% endblock %}

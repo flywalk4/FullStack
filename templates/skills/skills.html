@@ -81,7 +81,7 @@
                 </button>
               </div>
             <img style="display: block; margin: 0 auto;" width="800px" src="{{p.photo}}">
-            <p>{{p.full_text|safe}}</p>
+            {{p.full_text|safe}}
         </article>
     {% endfor %}
 {% endblock %}
