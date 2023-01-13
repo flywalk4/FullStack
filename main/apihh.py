@@ -70,6 +70,9 @@ def make_requests():
             pass
     return items
 
+def fix_date(vacancy):
+    vacancy["published_at"] = " ".join(str(vacancy["published_at"]).split("T")).split("+")[0]
+    return vacancy
 def get():
     items = make_requests()
     out = []
@@ -79,5 +82,5 @@ def get():
             out.append(json.loads(request.text))
         if len(out) == 10:
             break
-    
+    out = list(map(lambda x: fix_date(x), out))
     return sorted(out, key=lambda x: x["published_at"])
